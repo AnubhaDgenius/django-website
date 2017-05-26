@@ -1,0 +1,16 @@
+<!-- todo change me -->
+{% extends "base.html" %}
+{% block content %}
+	<h1 class="mybackground">{{ object.subject }}</h1>
+    <table class="table table-striped  table-responsive">
+    <tr><th style="width: 40%">Subject</th><td>{{ object.subject }}</td></tr>    
+    <tr><th>Date</th><td>{{ object.cr_date }}</td></tr>    
+    <tr><th>Message</th><td>{{ object.message }}</td></tr>    
+    <tr><th>Download</th><td><a href="/media/{{object.notice_details}}">{{object.notice_details}}</a></td></tr>    
+	</table>
+	<a href="/gallery/new_ques?nid={{ object.id }}">Ask Question</a><br>
+	<a href="/gallery/">Back</a>
+{% endblock %}
+
+
+

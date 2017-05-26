@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<H1>ABOUT DOGS</H1>
+
+
+<!-- start of id2 -->
+
+<div id="2">
+<div class="row">
+
+<!-- 1 -->
+<div class="col-md-3">
+<div class="panel panel-default">
+<a href="">
+  <div class="panel-body"><img src="/static/bs/img/Basenji-150-150-crop.jpg"></div>
+  <div class="panel-footer">Basenji</div>
+</a>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="col-md-3">
+<div class="panel panel-default">
+<a>
+  <div class="panel-body"><img src="/static/bs/img/Basset-Hound-150-150-crop.jpg"></div>
+  <div class="panel-footer">Basset-Houndog</div>
+</a>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="col-md-3">
+<div class="panel panel-default">
+<a>
+  <div class="panel-body"><img src="/static/bs/img/Beagle-150-150-crop.jpg"></div>
+  <div class="panel-footer">Beagle</div>
+  </a>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="col-md-3">
+<div class="panel panel-default">
+<a href="https://www.aprpets.org/directory/m.directory/39/view/186">
+  <div class="panel-body"><img src="/static/bs/img/Bearded-Collie-150-150-crop.jpg" class="img-responsive"></div>
+  <div class="panel-footer">Bearded-Collie</div>
+</a>
+</div>
+</div>
+
+
+
+
+</div>
+
+<div class="row">
+
+<!-- 1 -->
+<div class="col-md-3">
+<div class="panel panel-default">
+<a href="">
+  <div class="panel-body"><img src="/static/bs/img/Bernese-Mountain-Dog-150-150-crop.jpg"></div>
+  <div class="panel-footer">Bernese-Mountain-Dog</div>
+</a>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="col-md-3">
+<div class="panel panel-default">
+<a>
+  <div class="panel-body"><img src="/static/bs/img/Bichon-Frise-150-150-crop.jpg"></div>
+  <div class="panel-footer">Bichon-Frise</div>
+</a>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="col-md-3">
+<div class="panel panel-default">
+<a>
+  <div class="panel-body"><img src="/static/bs/img/Bloodhound-150-150-crop.jpg"></div>
+  <div class="panel-footer">Bloodhound</div>
+  </a>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="col-md-3">
+<div class="panel panel-default">
+<a href="https://www.aprpets.org/directory/m.directory/39/view/186">
+  <div class="panel-body"><img src="/static/bs/img/Bolognese-150-150-crop.jpg" class="img-responsive"></div>
+  <div class="panel-footer">Bolognese</div>
+</a>
+</div>
+</div>
+
+
+
+
+</div>
+
+</div>
+
+
+
+ <div style="text-align:center">
+<ul class="pagination">
+   <li><a href="#">&laquo;</a></li>
+    <li><a href="/gallery/DogBreedInfo">1</a></li>
+    <li><a href="/gallery/DogBreedInfo2"  class="active">2</a></li>
+    <li><a href="/gallery/DogBreedInfo3">3</a></li>
+    <li><a href="#">&raquo;</a></li>
+  </ul>
+ </div> 
+
+
+<!-- {% for page in paginator.page_range %}
+    {% if forloop.counter != 1 %} | {% endif %}
+    <a href="?page={{ page }}">{{ page }}</a>
+	{% endfor %}
+ -->
+{% endblock %}

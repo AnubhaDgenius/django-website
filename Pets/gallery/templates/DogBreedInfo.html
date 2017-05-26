@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<H1>ABOUT DOGS</H1>
+
+
+<!-- start of id=1 -->
+<div id="1">
+<div class="row">
+<!-- 1 -->
+<div class="col-md-3">
+<div class="panel panel-default">
+<a href="https://en.wikipedia.org/wiki/Afghan_Hound">
+  <div class="panel-body"><img src="/static/bs/img/Afghan-Hound.jpg" class="img-responsive"></div>
+  <div class="panel-footer">Afghan Hound</div>
+</a>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="col-md-3">
+<div class="panel panel-default">
+<a href="https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjDl_SMk73TAhXLqo8KHXJaBR0QFggjMAA&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAiredale_Terrier&usg=AFQjCNHbhMEqn_lEOEt7gTJeAvokZiod5A">
+  <div class="panel-body"><img src="/static/bs/img/Airedale-Terrier-150-150-crop.jpg" class="img-responsive"></div>
+  <div class="panel-footer">Airedale-Terrier</div>
+</a>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="col-md-3">
+<div class="panel panel-default">
+<a href="https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiH24j9kr3TAhVIvI8KHSo6ASEQFggjMAA&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAkita_(dog)&usg=AFQjCNHw7r7ESTKWwyDfJk380Isr2_u4ZA">
+  <div class="panel-body"><img src="/static/bs/img/Akita-150-150-crop.jpg" class="img-responsive"></div>
+  <div class="panel-footer">Akita</div>
+</a>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="col-md-3">
+<div class="panel panel-default">
+<a href=https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjHxpOwk73TAhUBNY8KHdS3DB8QFggjMAA&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAlaskan_Malamute&usg=AFQjCNHPuwdYX-6mjzKJvUKxFXbglW_eTA>
+  <div class="panel-body"><img src="/static/bs/img/Alaskan-Malamute-150-150-crop.jpg" class="img-responsive"></div>
+  <div class="panel-footer">Alaskan-Malamute</div>
+</a>
+</div>
+</div>
+
+
+
+
+
+</div>
+
+<div class="row">
+
+<!-- 1 -->
+<div class="col-md-3">
+<div class="panel panel-default">
+<a href="https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjDq7-9k73TAhXKpI8KHWL4BRwQFgghMAA&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FAmerican_Bulldog&usg=AFQjCNFUcutzIaDz4wLPs7UgR_slam8uew">
+  <div class="panel-body"><img src="/static/bs/img/American-Bulldog-150-150-crop.jpg"></div>
+  <div class="panel-footer">American Bulldog</div>
+</a>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="col-md-3">
+<div class="panel panel-default">
+<a>
+  <div class="panel-body"><img src="/static/bs/img/American-Eskimo-Dog-150-150-crop.jpg"></div>
+  <div class="panel-footer">American Eskimo Dog</div>
+</a>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="col-md-3">
+<div class="panel panel-default">
+<a>
+  <div class="panel-body"><img src="/static/bs/img/The-American-Rat-Terrier-150-150-crop.jpg"></div>
+  <div class="panel-footer">American RatTerrier</div>
+  </a>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="col-md-3">
+<div class="panel panel-default">
+<a href="https://www.aprpets.org/directory/m.directory/39/view/186">
+  <div class="panel-body"><img src="/static/bs/img/Australian-Shepherd-150-150-crop.jpg" class="img-responsive"></div>
+  <div class="panel-footer">Australian-Shepherd</div>
+</a>
+</div>
+</div>
+
+
+
+
+</div>
+</div>
+
+
+
+<div style="text-align:center">
+<ul class="pagination">
+   <li><a href="#">&laquo;</a></li>
+    <li><a href="/gallery/DogBreedInfo" class="active">1</a></li>
+    <li><a href="/gallery/DogBreedInfo2">2</a></li>
+    <li><a href="/gallery/DogBreedInfo3">3</a></li>
+    <li><a href="#">&raquo;</a></li>
+  </ul>
+ </div> 
+
+<!-- {% for page in paginator.page_range %}
+    {% if forloop.counter != 1 %} | {% endif %}
+    <a href="?page={{ page }}">{{ page }}</a>
+	{% endfor %}
+ -->
+{% endblock %}

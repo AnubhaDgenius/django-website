@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Notice</h1>
+<table class="table table-striped  table-responsive">
+<tr>
+     <th>Subject</th>
+     <th>Date</th>   
+    <th>Download</th>
+    </tr>
+    {% for n1 in object_list %}
+    <tr>
+     <td><a href="/gallery/{{n1.id}}">{{ n1.subject }}</a></td>
+     <td>{{ n1.cr_date }}</td> 
+     {% if n1.notice_details %}  
+     <td><a href="/media/{{n1.notice_details}}">download</a></td>
+     {% else %}
+     <td></td>
+      {% endif %}	
+    </tr>
+    {% endfor %}        
+</table>
+    {% for page in paginator.page_range %}
+    {% if forloop.counter != 1 %} | {% endif %}
+    <a href="?page={{ page }}">{{ page }}</a>
+	{% endfor %}
+{% endblock %}

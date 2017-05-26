@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<H1>ABOUT DOGS</H1>
+
+
+<!-- start of id 3 -->
+<div id="3">
+<div class="row">
+
+<div class="col-md-3">
+<div class="panel panel-default">
+<a href="https://www.aprpets.org/directory/m.directory/39/view/186">
+  <div class="panel-body"><img src="/static/bs/img/Cairn-Terrier-150-150-crop.jpg" class="img-responsive"></div>
+  <div class="panel-footer">Cairn-Terrier</div>
+</a>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="panel panel-default">
+<a href="https://www.aprpets.org/directory/m.directory/39/view/186">
+  <div class="panel-body"><img src="/static/bs/img/Cavalier-King-Charles-Spaniel-150-150-crop.jpg" class="img-responsive"></div>
+  <div class="panel-footer">Cavalier-King-Charles-Spaniel</div>
+</a>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="panel panel-default">
+<a href="https://www.aprpets.org/directory/m.directory/39/view/186">
+  <div class="panel-body"><img src="/static/bs/img/Chesapeake-Bay-Retriever-150-150-crop.jpg" class="img-responsive"></div>
+  <div class="panel-footer">Chesapeake-Bay-Retriever</div>
+</a>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="panel panel-default">
+<a href="https://www.aprpets.org/directory/m.directory/39/view/186">
+  <div class="panel-body"><img src="/static/bs/img/Chihuahua-150-150-crop.jpg" class="img-responsive"></div>
+  <div class="panel-footer">Chihuahua</div>
+</a>
+</div>
+</div>
+
+</div>
+<div class="row">
+<div class="col-md-3">
+<div class="panel panel-default">
+<a href="https://www.aprpets.org/directory/m.directory/39/view/186">
+  <div class="panel-body"><img src="/static/bs/img/Chinese-Shar-pei-150-150-crop.jpg" class="img-responsive"></div>
+  <div class="panel-footer">Chinese-Shar-pei</div>
+</a>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="panel panel-default">
+<a href="https://www.aprpets.org/directory/m.directory/39/view/186">
+  <div class="panel-body"><img src="/static/bs/img/Cocker-Spaniel-150-150-crop.jpg" class="img-responsive"></div>
+  <div class="panel-footer">Cocker-Spaniel</div>
+</a>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="panel panel-default">
+<a href="https://www.aprpets.org/directory/m.directory/39/view/186">
+  <div class="panel-body"><img src="/static/bs/img/Coton-de-Tulear-150-150-crop.jpg" class="img-responsive"></div>
+  <div class="panel-footer">Coton-de-Tulear</div>
+</a>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="panel panel-default">
+<a href="https://www.aprpets.org/directory/m.directory/39/view/186">
+  <div class="panel-body"><img src="/static/bs/img/Dachshund-150-150-crop.jpg" class="img-responsive"></div>
+  <div class="panel-footer">Dachshund</div>
+</a>
+</div>
+</div>
+
+
+</div>
+
+</div>
+
+
+
+ <div style="text-align:center">
+<ul class="pagination">
+   <li><a href="#">&laquo;</a></li>
+    <li><a href="/gallery/DogBreedInfo">1</a></li>
+    <li><a href="/gallery/DogBreedInfo2">2</a></li>
+    <li><a href="/gallery/DogBreedInfo3"   class="active">3</a></li>
+    <li><a href="#">&raquo;</a></li>
+  </ul>
+ </div> 
+ 
+
+<!-- {% for page in paginator.page_range %}
+    {% if forloop.counter != 1 %} | {% endif %}
+    <a href="?page={{ page }}">{{ page }}</a>
+	{% endfor %}
+ -->
+{% endblock %}
